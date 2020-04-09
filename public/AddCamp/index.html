@@ -3,19 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <title>Index</title>
 </head>
 <body>
-    <input id="ID" type="text" placeholder="ID">
+
+    <nav class="navbar navbar-expand-lg navbar-dark rounded-lg" id="navbarchange" style="background-color: #3CC78F;">
+        <a class="navbar-brand" href="#">Charifit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/AddCamp/index.html'>Add a new bank</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/AddHospital/index.html'>Add a new hospital</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/Display/index.html'>Display all the banks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/Query/index.html'>Query the database</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="text-center " id="formstyling">
+        <h1>Add Blood Bank</h1>
+        <br>
+        <form>
+            <div class="form-group row text-left">
+                <label for="ID" class="col-sm-4 col-md-3 col-form-label">Id : </label>
+                <div class="col-sm-8 col-md-9">
+                    <input type="text" class="form-control" id="ID">
+                </div>
+            </div>
+            <div class="form-group row text-left">
+                <label for="Name" class="col-sm-4 col-md-3 col-form-label">Name : </label>
+                <div class="col-sm-8 col-md-9">
+                    <input type="text" class="form-control" id="Name">
+                </div>
+            </div>
+            <div class="form-group row text-left">
+                <label for="Area" class="col-sm-4 col-md-3 col-form-label">Area : </label>
+                <div class="col-sm-8 col-md-9">
+                    <input type="text" class="form-control" id="Area">
+                </div>
+            </div>
+            <div class="form-group row text-left">
+                <label for="zipCode" class="col-sm-4 col-md-3 col-form-label">Zip : </label>
+                <div class="col-sm-8 col-md-9">
+                    <input type="text" class="form-control" id="zipCode">
+                </div>
+            </div>
+            <div class="form-group row text-left">
+                <label for="files" class="col-sm-4 col-md-3 col-form-label">Choose CSV file : </label>
+                <div class="col-sm-8 col-md-9">
+                    <input type="file"  id="files">
+                </div>
+            </div>
+            <input type="submit" class="btn btn-primary" id="btnSubmit">            
+        </form>
+    </div>
+
+
+    <!-- <input id="ID" type="text" placeholder="ID">
     <input id="Name" type="text" placeholder="Name">
     <input id="Area" type="text" placeholder="Area">
     <input id="zipCode" type="text" placeholder="zip">
     <input type="file" id="files">
-    <input type="submit" id="btnSubmit">
+    <input type="submit" id="btnSubmit"> -->
+    
     <div id="parsed_csv_list"></div>
 </body>
 </html>
