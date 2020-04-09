@@ -29,6 +29,10 @@ const hospital = dbHospital.define('hospital',{
         type:DT.STRING,
         allowNull:false
     },
+    zipCode:{
+        type:DT.INTEGER,
+        allowNull:false
+    },
     Contact:{
         type:DT.TEXT,
         allowNull:false
@@ -48,6 +52,10 @@ const bloodCamp = dbBloodCamp.define('bloodCamp',{
     
     Area:{
         type:DT.STRING,
+        allowNull:false
+    },
+    zipCode:{
+        type:DT.INTEGER,
         allowNull:false
     }
 })
@@ -73,10 +81,6 @@ const bloodDonor = db.define('bloodDonor',{
     Gender:{
         type:DT.STRING,
         allowNull: false
-    },
-    Profesion:{
-        type:DT.STRING,
-        allowNull: true
     },
     MonthsLastDon:{
         type:DT.INTEGER,

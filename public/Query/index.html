@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Query</title>
+    <title>Analysis</title>
+    <script src="app.js"></script>
 </head>
 <body>
-    Query here nigga
+    <h1>Enter Hospital details :</h1>
+    <input id="hospitalId" placeholder="ID">
+    <input id="name" placeholder="name">
+    <input id="btnSubmit" type="submit">
+    <h2>Closest Blood Bank:</h2>
+    <h2>Analysis (Dropdown menu)</h2>
+    <select id="Gender">
+        <option value='all' selected>Any</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+
+    <select id="Age">
+        <option value='all' selected>Any</option>
+        <option value="10">10-20</option>
+        <option value="20">20-30</option>
+        <option value="30">30-40</option>
+        <option value="40">40-50</option>
+        <option value="50">28-58</option>
+        <option value="60">28-68</option>
+    </select>
+
+    <select id="bloodGrp">
+        <option value="any" selected>Any</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="A+">O+</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+    </select>
+    <div id="Ans"></div>
 </body>
 </html>
