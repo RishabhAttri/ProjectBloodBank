@@ -14,7 +14,7 @@ function display(){
 function displayHTMLtables(data){
     var table = document.createElement('table')
     var divTable = document.getElementById('ForTable')
-    var arr = ['Donor_id','BloodCampId','BloodGrp','Age','Gender','Profesion','MonthsLastDon','TotDon','VolDon'
+    var arr = ['Donor_id','BloodCampId','BloodGrp','Age','Gender','MonthsLastDon','TotDon','VolDon'
         ,'MonthsFirstDon','BloodDonNxt']
     var thead = document.createElement('thead')
     var trHead = document.createElement('tr')
