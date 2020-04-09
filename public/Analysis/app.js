@@ -26,7 +26,7 @@ $(document).ready(function(){
 
         function closestHospitals(zC){
             $.ajax({
-                url:`/Query/getall?zipCode=${zC}`,
+                url:`/Analysis/getall?zipCode=${zC}`,
                 method:'GET',
                 success:function(result){
                     let list = document.getElementById('listBank')
