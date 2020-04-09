@@ -6,11 +6,82 @@
     <title>Home</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
-    <a href='AddCamp/index.html'>Add A new bank</a><br>
-    <a href='AddHospital/index.html'>Add a new hospital</a><br>
-    <a href='Display/index.html'>Display all the banks</a><br>
-    <a href='Query/index.html'>Query the database</a>
+
+  <div id="home">
+    <nav class="navbar navbar-expand-lg navbar-dark rounded-lg" id="navbarchange" style="background-color: #3CC78F;">
+        <a class="navbar-brand" href="#">Charifit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/AddCamp/index.html'>Add a new bank</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/AddHospital/index.html'>Add a new hospital</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/Display/index.html'>Display all the banks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/Query/index.html'>Query the database</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center text-white">
+      <h1>About</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
+    <h1 class="text-center">Reason of Helping</h1>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <img src="../images/1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Saving lives</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>      
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <img src="../images/2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Spreading Smiles</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>      
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <img src="../images/3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Enriching Mankind</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>      
+      </div>
+    </div>
+
+  </div>
+    <!-- <a class="nav-link" href='AddCamp/index.html'>Add A new bank</a><br>
+    <a class="nav-link" href='AddHospital/index.html'>Add a new hospital</a><br>
+    <a class="nav-link" href='Display/index.html'>Display all the banks</a><br>
+    <a class="nav-link" href='Query/index.html'>Query the database</a> -->
 </body>
 </html>
