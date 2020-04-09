@@ -1,0 +1,70 @@
+body {
+	/* background-image: url(blood.jpg); */
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Tisa';
+}
+
+#home .jumbotron {
+	background-image: url(../images/banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	font-size: 1.5rem;
+	opacity: 0.75;
+	margin: 2rem 1rem;
+}
+
+#home .jumbotron h1 {
+	font-size: 3.5rem;
+	font-weight: 500;
+}
+
+#home .row {
+	margin: auto 5rem;
+}
+
+#home .row .card {
+	margin: auto 1.25rem;
+}
+
+.about {
+	padding: auto 5rem;
+}
+
+#ForTable {
+	margin: 0 5rem 0 0;
+}
+
+#EncTable {
+	margin: 2rem 10.9rem;
+}
+
+#navbarchange .navbar-nav .nav-link {
+	color: rgba(255,255,255,1);
+	font-size: 1.25rem;
+
+}
+
+#navbarchange .navbar-brand {
+	font-size : 1.75rem;
+	font-weight: 500;
+}
+
+.navbar {
+    margin: 1rem 1rem;
+}
+
+#formstyling {
+	width: 50%;
+	margin:2rem auto ;
+}
