@@ -8,42 +8,44 @@
     <script type="text/javascript" src="app.js"></script>
     <link rel="stylesheet" type="text/css" href="/stylesheet.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark rounded-lg" id="navbarchange" style="background-color: #3CC78F;">
-    <a class="navbar-brand" href="#">Charifit</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">Home</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href='/AddCamp/index.html'>Add a new bank</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href='/AddHospital/index.html'>Add a new hospital</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href='/Display/index.html'>Display all the banks</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href='/Query/index.html'>Query the database</a>
-        </li>
-      </ul>
-    </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-dark rounded-lg" id="navbarchange" style="background-color: #3CC78F;">
+        <a class="navbar-brand" href="#">Charifit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/AddCamp/index.html'>Add a new bank</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/AddHospital/index.html'>Add a new hospital</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/Display/index.html'>Display all the banks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/Query/index.html'>Query the database</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
 
-    <div id="EncTable">
-      <h1  class="text-center"> Display</h1>
-      <div id="ForTable" class="text-center table"></div>
+
+    <div class="container text-center">
+        <div class="table-responsive">
+            <h1> Display</h1> 
+            <div id="ForTable"></div>          
+        </div>      
     </div>
+
 </body>
 </html>
