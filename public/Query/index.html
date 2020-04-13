@@ -3,42 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analysis</title>
+    <title>Query</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Enter Hospital details :</h1>
-    <input id="hospitalId" placeholder="ID">
-    <input id="name" placeholder="name">
-    <input id="btnSubmit" type="submit">
-    <h2>Closest Blood Bank:</h2>
-    <h2>Analysis (Dropdown menu)</h2>
-    <select id="Gender">
-        <option value='all' selected>Any</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-    </select>
 
-    <select id="Age">
-        <option value='all' selected>Any</option>
-        <option value="10">10-20</option>
-        <option value="20">20-30</option>
-        <option value="30">30-40</option>
-        <option value="40">40-50</option>
-        <option value="50">28-58</option>
-        <option value="60">28-68</option>
-    </select>
+    <nav class="navbar navbar-expand-lg navbar-dark rounded-lg" id="navbarchange" style="background-color: #3CC78F;">
+        <a class="navbar-brand" href="#">Charifit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/AddCamp/index.html'>Add a new bank</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/AddHospital/index.html'>Add a new hospital</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/Display/index.html'>Display all the banks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/Query/index.html'>Query the database</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='/Analysis/index.html'>Analysis</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
 
-    <select id="bloodGrp">
-        <option value="any" selected>Any</option>
-        <option value="O+">O+</option>
-        <option value="O-">O-</option>
-        <option value="A+">O+</option>
-        <option value="B+">B+</option>
-        <option value="B-">B-</option>
-        <option value="AB+">AB+</option>
-        <option value="AB-">AB-</option>
-    </select>
-    <div id="Ans"></div>
+
+    <div class="text-left" id="formstyling">
+        <h1 align="center">Enter Hospital Details</h1>
+        <br>
+        <form>
+            <div class="form-group row">
+                <label for="hospitalId" class="col-sm-4 col-md-3 col-lg-2 col-form-label">ID : </label>
+                <div class="col-sm-8 col-md-9 col-lg-10">
+                    <input type="text" class="form-control" id="hospitalId">
+                </div>
+            </div>
+            <div class="form-group row text-left">
+                <label for="name" class="col-sm-4 col-md-3 col-lg-2 col-form-label">Name : </label>
+                <div class="col-sm-8 col-md-9 col-lg-10">
+                    <input type="text" class="form-control" id="name">
+                </div>
+            </div>
+            <div class="text-center">
+                <button id="btnSubmit" class="btn btn-primary" type="button">Submit</button>
+            </div>
+
+            <div id="closebb" style="display: none;">
+                <hr>
+                <h3>Closest Blood Bank: </h3>
+                <ul id="listBank"> </ul>
+                <hr>
+
+                <h3>Query (Dropdown menu): </h3>
+                <div class="form-row">
+                    <div class="form-group col-4">
+                        <label for="Gender">Gender</label>
+                        <select id="Gender" class="form-control">
+                            <option value='Any' selected>Any</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="Age">Age</label>
+                        <select id="Age" class="form-control">
+                            <option value='Any' selected>Any</option>
+                            <option value="20">20-30</option>
+                            <option value="30">30-40</option>
+                            <option value="40">40-50</option>
+                            <option value="50">50-60</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="bloodGrp">Blood Group</label>
+                        <select id="bloodGrp" class="form-control">
+                            <option value="Any" selected>Any</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="A+">A+</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                    </div>
+                </div>            
+                <div class="text-center">
+                    <button id="QueryBtn" class="btn btn-info" type="button">Search</button>
+                </div>
+                <br>
+            </div>
+
+            <div id="Ans" style="display: none;">
+                <h3>Blood Bank where you find blood (possibly):</h3>
+            </div>
+        </form>
+    </div>
+
 </body>
 </html>
