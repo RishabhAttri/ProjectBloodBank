@@ -1,6 +1,5 @@
 body {
-	/* background-image: url(blood.jpg); */
-    background-repeat: no-repeat;
+    	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
@@ -13,6 +12,8 @@ html, body {
 	font-family: 'Tisa';
 }
 
+
+/*Home page*/
 #home .jumbotron {
 	background-image: url(../images/banner.png);
 	background-repeat: no-repeat;
@@ -41,14 +42,14 @@ html, body {
 	padding: auto 5rem;
 }
 
+
+/*Table display*/
 #ForTable {
 	margin: 0 5rem 0 0;
 }
 
-#EncTable {
-	margin: 2rem 10.9rem;
-}
 
+/*Navbar*/
 #navbarchange .navbar-nav .nav-link {
 	color: rgba(255,255,255,1);
 	font-size: 1.25rem;
@@ -64,7 +65,40 @@ html, body {
     margin: 1rem 1rem;
 }
 
+
+/*Form Display*/
 #formstyling {
-	width: 50%;
+	width: 65%;
 	margin:2rem auto ;
+}
+
+@media all and (min-width: 1281px){
+	#formstyling {
+		width: 40%;
+		margin:2rem auto ;
+	}
+}
+
+@media all and (min-width: 761px) and (max-width: 1280px){
+	#formstyling {
+		width: 50%;
+		margin:2rem auto ;
+	}
+}
+
+@media all and (min-width: 650px) and (max-width: 760px){
+	#formstyling {
+		width: 55%;
+		margin:2rem auto ;
+	}
+}
+
+#padRigProb {
+	padding-right: 0;
+}
+
+
+/*Graphs Display*/
+#displayGraphs {
+	width: 90%;
 }
